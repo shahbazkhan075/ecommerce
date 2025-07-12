@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    overflow-x: hidden;
+}
+.bg{
+    background-image: url(./image/background.jpg);
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   top: 0px;
+   z-index: -1;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.navbar{
+    /* background-image: url(./image/backgr.png); */
+    /* height: 100px; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 20px; */
+}
+.navbar img{
+    height: 40px;
+    width: 160px;
+}
+.navbar .navbar-art2 ul{
+    display: flex;
+}
+.navbar .navbar-art2 ul li{
+    list-style: none;
+    /* border: 2px solid black; */
+    padding: 20px;
+}
+.navbar .navbar-art2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar .navbar-art3{
+    display:flex;
+    /* border: 2px solid red; */
+     
+   
+}
+.navbar .navbar-art3 div{
+    /* border: 2px solid red */
+    padding: 15px;
+}
+.navbar .navbar-art3 div i{
+    font-size: 20px;
+}
+
+.navbar-art3 div select{
+     border: none;          
+     background: transparent; 
+     outline: none; 
+     font-size: 20px; 
+}
+/*  ==================== navbar end ====================*/
+.home{
+    margin-top: 100px;
+    padding-bottom: 210px;
+}
+.home div h1{
+    font-size: 150px;
+    text-align: center;
+    color: white;
+    letter-spacing: 20px;
+     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.home div h4{
+    margin-left: 110px;
+    font-size: 30px;
+}
+.home div button{
+    border: none;
+    font-size: 30px;
+    margin-left: 110px;
+    background-color: transparent;
+    border-bottom:2px solid white;
+    outline: none;
+    margin-top: 30px;
+}
+
+/*  ======================= main end ================= */
+.services .service-art1{
+        /* background-color:blue; */
+        /* border:2px solid red; */
+        /* margin-top: 180px; */
+        /* margin-top:150px; */
+        display:flex;
+        /* justify-content: space-around; */
+      
+       
+    }
+    .services .service-art1 div{
+        display: flex;
+        align-items: center;
+        /* margin: 50px; */
+        padding: 20px;
+         
+    }
+    .service-art1-para{
+        border-right: 1px solid grey;
+    
+         padding-right: 30px;
+         color:#222529;
+         font-size: 25px;
+         white-space: nowrap;
+   }
+/* ============ featurs end ============ */
+
+/* .category{
+    display: flex;
+    padding-left: 70px;
+    
+}
+.category article div img{
+    height: 500px;
+    width: 350px;
+    border: 2px solid white;
+    padding: 10px;
+} */
+
+.categories{
+    display: flex;
+    padding: 20px;
+}
+.categories .category-card1{
+    background-image: url(./image/women.webp);
+    background-size: cover;
+}
+.categories .category-card2{
+    background-image: url(./image/man.jpg);
+    background-size: cover;
+}
+.categories .category-card3{
+    background-image: url(./image/kid3.jpeg);
+    background-size: cover;
+}
+
+.categories .card{
+    height: 500px;
+    width: 450px;
+    margin-left: 20px;
+}
+
+.categories .card .category-info {
+  /* background: rgba(0, 0, 0, 0.4); */
+  color: white;
+  width: 100%;
+  padding-top: 370px;
+  padding-left: 40px;
+}
+
+.categories .card .category-info h2{
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.categories .card .category-info button{
+    border: none;
+    background-color: transparent;
+    border-bottom:2px solid white;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 3px;
+} 
+
+.categories .card .category-info button:hover{
+    border-color: #c1bdbd;
+}
