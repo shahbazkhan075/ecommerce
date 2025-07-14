@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 body,html{
     overflow-x: hidden;
@@ -45,6 +50,7 @@ body,html{
 }
 .navbar .navbar-art3 div i{
     font-size: 20px;
+    color: #000;
 }
 
 .navbar-art3 div select{
@@ -163,9 +169,152 @@ input[type="password"] {
 .reg-btn:hover{
     background-color: #000;
 }
-/* login sign-up end */
+/* ======================================= login sign-up end =======================*/
 
 .gallary .gallary-art1{
   text-align: center;
   font-size: 50px;
+}
+.gallary .gallary-art2 img{
+  height: 200px;
+}
+.gallary .gallary-art2{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  margin-top: 40px;
+  /* border: 2px solid black; */
+  margin-bottom: 40px;
+}
+
+/* =================== gallary end ============ */
+
+.footer {
+  display: flex;
+  margin-top: 50px;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding-bottom: 80px;
+  padding-top: 100px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  /* padding: 150px; */
+}
+
+.footer article {
+  flex: 1 1 200px;
+  margin: 10px 20px;
+}
+
+.footer-art1 p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-art1 img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer .footer-art1 .icon{
+  display: flex;
+}
+.icon i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon i:hover {
+  color: #888;
+}
+
+.footer h5 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #ff0000;
+}
+
+.footer-art4 ul li a.sale {
+  color: red;
+}
+
+.footer-art5 input[type="email"] {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.footer-art5 button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.footer-art5 button:hover {
+  background-color: #333;
+}
+
+.footer-art5 p {
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+}
+.footer-art5 a{
+  font-size: 15px;
+  color: #555;
+  text-decoration: none;
+}
+.footer-art5 a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  background: #f4f4f4;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.copyright .payments{
+  display: flex;
+  gap: 20px;
+}
+.copyright p {
+  font-size: 15px;
+  color: #555;
+}
+.copyright .payments div i{
+  font-size: 30px;
 }
