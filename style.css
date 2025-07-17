@@ -296,16 +296,20 @@ body,html{
     display: flex;
     justify-content: space-around;
 }
-.product .product-art1 button{
-    height: 20px;
-    width: 120px;
-    background-color: #000;
-    color: white;
-    border: none;
-    outline: none;
-    border-radius: 3px;
-    margin-top: 5px;
+.product .product-art1 div .btn{
+  display: inline-block;
+  padding: 7px 15px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s;
 }
+/* .product .product-art1 div .btn:hover {
+  background-color: rgb(210, 205, 196);
+  color: #000;
+} */
 
 /* ========== seasonel collection */
 

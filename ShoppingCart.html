@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shoppingcart.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="navbar">
+        <article>
+            <img src="./image/login-logo-black.png" alt="">
+        </article>
+        <article class="navbar-art2">
+            <ul>
+                <li> <a href="index.html#women">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+        </article>
+        <article class="navbar-art3">
+            <div>
+                <select name="" id="">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><a href="login.html"><i class="fa-regular fa-user"></i></a></div>
+            <div><i class="fa-solid fa-bag-shopping"></i></div>
+        </article>
+    </section>
+    <!-- ================== navbar end ==================-->
+<section class="links-to-process">
+        <article class="art1">
+            <div class="div1">
+                <a href="#">Shopping Cart&nbsp;&nbsp; ></a>
+            </div>
+            <div>
+                <a href="#">&nbsp;Checkout &nbsp;&nbsp;></a>
+            </div>
+            <div>
+                <a href="#"> &nbsp;Order Complete &nbsp;&nbsp;></a>
+            </div>
+        </article>
+<!-- how much you pay per product and what offer you get -->
+ <div class="content">
+        <div class="left-content">
+            <article class="products-you-are-selected">
+                    <div class="range">
+                        <div>
+                            <div>
+                                <img src="./image/shop52-icon-2.png" alt="">
+                            </div>
+                            <div>
+                                Add $950.00 to cart and get free shipping!
+                            </div>
+                        </div>
+                        <progress value="20" max="100"></progress>
+                    </div>
+            </article>
+ <!-- product which is added in cart -->
+            <article class="added-product">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>PRODUCT</th>
+                                <th>PRICE</th>
+                                <th>QUANTITY</th>
+                                <th>SUBTOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product-info">
+                                    <img src="./image/product1.png" alt="">
+                                    <span>Casual T-Shirt</span>
+                                </td>
+                                <td>$50.00</td>
+                                <td>
+                                    <div class="qty-box">
+                                        <button>-</button>
+                                        <input type="text" value="1">
+                                        <button>+</button>
+                                    </div>
+                                </td>
+                                <td>$50.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </article>
+        </div>
+<!-- right content -->
+            <div class="cart-totals-box">
+                <h2>CART TOTALS</h2>
+
+                <div class="subtotal-line">
+                    <span>Subtotal</span>
+                    <span>$50.00</span>
+                </div>
+
+                <form action="#">
+                    <p class="section-label">Shipping</p>
+
+                    <label class="radio-label">
+                        <input type="radio" name="shipping"> Free shipping
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="shipping"> Flat rate
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="shipping"> Local pickup
+                    </label>
+
+                    <p class="shipping-to">Shipping to <strong>NY</strong></p>
+
+                    <select class="select-field">
+                        <option>United States (US)</option>
+                        <option>India</option>
+                        <option>Australia</option>
+                    </select>
+
+                    <select class="select-field">
+                        <option>New York</option>
+                        <option>Delhi</option>
+                        <option>London</option>
+                    </select>
+
+                    <input type="text" placeholder="City" class="input-text">
+                    <input type="text" placeholder="Postcode / ZIP" class="input-text">
+
+                    <button class="update-btn">UPDATE TOTALS</button>
+
+                    <div class="total-line">
+                        <span>Total</span>
+                        <span>$50.00</span>
+                    </div>
+                     <!-- PROCEED TO CHECKOUT → -->
+                     <a href="checkout.html" class="checkout-btn">PROCEED TO CHECKOUT →</a>
+                </form>
+            </div>
+</section>
+
+<!-- ================================= footer section with gallery ============= -->
+
+<section class="gallary">
+            <article class="gallary-art1">
+                <h1>@portotheme</h1>
+            </article>
+            <article class="gallary-art2">
+                <div>
+                    <img src="./image/themeimg1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./image/themeimg2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./image/themeimg3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./image/themeimg4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./image/themeimg5.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./image/themeimg6.jpg" alt="">
+                </div>
+            </article>
+        </section>
+<!-- ===================== gallary ends ====================== -->
+        <section class="services">
+        <article class="service-art1">
+            <div>
+                
+                <img src="./image/shop52-icon-2.png" alt="">
+                <p class="service-art1-para">Free Shipping & Returns</p>
+            </div>
+            <div>
+                <img src="./image/shop52-icon-3.png" alt="">
+                <p class="service-art1-para">Money Back Gurantee</p>
+            </div>
+            <div>
+                <img src="./image/shop52-icon-4.png" alt="">
+                 <p class="service-art1-para">Online Support 24/7</p>
+            </div>
+            <div>
+                <img src="./image/shop52-icon-5.png" alt="">
+                <p class="service-art1-para">Secure Payment</p>
+            </div>
+        </article>
+    </section>
+    <!-- ================= service end here =================== -->
+     <section class="footer">
+          <article class="footer-art1">
+            <div> 
+                <p>Redefining style with curated fashion essentials for every occasion. Discover timeless pieces and modern trends designed to elevate your wardrobe and celebrate your unique style.</p>
+            </div>
+            <div>
+                <img src="./image/login-logo-black.png" alt="">
+            </div>
+            <div class="icon">
+                  <div><i class="fa-brands fa-facebook"></i></div>
+                  <div><i class="fa-brands fa-square-x-twitter"></i></div>
+                  <div><i class="fa-brands fa-instagram"></i></div>
+            </div>
+          </article>
+          <article class="footer-art2">
+            <h5>QUICK LINKS</h5>
+                  <ul>
+                    <li>
+                        <a href="#">
+                        <img src="" alt=""> Help & FAQs
+                    </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <img src="" alt="">Login/Register
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" alt="">Track Your Order
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" alt="">Shipping& Returns
+                        </a>
+                    </li>
+                  </ul>
+          </article>
+          <article class="footer-art3">
+            <h5>ABOUT</h5>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our Blog</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </article>
+          <article class="footer-art4">
+            <h5>COTEGORIES</h5>
+            <ul>
+                <li><a href="index.html#women">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+          </article>
+            <article class="footer-art5">
+                <h5>JOIN OUR MAILING LIST</h5>
+                <form action="">
+                  <input type="email" placeholder="E-mail">
+                  <button type="submit">SUBSCRIBE</button>
+                </form>
+               <p> By subscribing, you agree to our</p> 
+               <a href="#">Terms of Use</a> and
+               <a href="#"> Privacy Policy.</a>
+            </article>
+     </section>
+     <!-- <hr/> -->
+    <footer class="copyright">
+        <p>Porto eCommerce. © 2025 All Rights Reserved</p>
+       <div class="payments">
+           <div><i class="fa-brands fa-cc-visa"></i></div>
+            <div><i class="fa-brands fa-cc-paypal"></i></div>
+            <div><i class="fa-brands fa-stripe"></i></div>
+            <div><i class="fa-brands fa-google-pay"></i></div>
+      </div>
+    </footer>
+</body>
+
+</html>
