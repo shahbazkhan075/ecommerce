@@ -204,6 +204,16 @@ body,html{
     font-size: 40px;
   }
 }
+@media(max-width:375px){
+  .home{
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
+  .home div h1{
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
+}
 
 /*  ======================= main end ================= */
 .services .service-art1 {
@@ -482,6 +492,13 @@ body,html{
   }
   .bg{
     height: 60vh    ;
+  }
+}
+
+@media(max-width:375px){
+  .product{
+    grid-template-columns: auto;
+    justify-content: center;
   }
 }
 
