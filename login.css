@@ -11,59 +11,10 @@ body,html{
     overflow-x: hidden;
 }
 
-.navbar{
-    /* background-image: url(./image/backgr.png); */
-    /* height: 100px; */
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* padding: 20px; */
-}
-.navbar img{
-    height: 40px;
-    width: 160px;
-}
-.navbar .navbar-art2 ul{
-    display: flex;
-}
-.navbar .navbar-art2 ul li{
-    list-style: none;
-    /* border: 2px solid black; */
-    padding: 20px;
-}
-.navbar .navbar-art2 ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-
-.navbar .navbar-art3{
-    display:flex;
-    /* border: 2px solid red; */
-     
-   
-}
-.navbar .navbar-art3 div{
-    /* border: 2px solid red */
-    padding: 15px;
-}
-.navbar .navbar-art3 div i{
-    font-size: 20px;
-    color: #000;
-}
-
-.navbar-art3 div select{
-     border: none;          
-     background: transparent; 
-     outline: none; 
-     font-size: 20px; 
-}
-
 /*                 =========== login and sign-up */
 
 .my-account{
-   height: 170px;
+    height: 170px;
     background-color: rgba(128,128,128,0.1);
     font-size: 40px; 
 }
@@ -74,6 +25,23 @@ body,html{
     top: 120px;
     left: 500px;
 }
+
+/*  responsive ness for my account section*/
+
+@media (max-width: 1024px) {
+  .my-account .my-account-art1 {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .my-account .my-account-art1 {
+    text-align: center;
+  }
+}
+
+
 .login {
   display: flex;
   justify-content:space-evenly;
@@ -138,7 +106,7 @@ input[type="password"] {
     font-weight: bold;
 }
 .btn {
-  width: 100%;
+  width: 50%;
   background-color: #232323;
   color: white;
   border: none;
@@ -146,7 +114,7 @@ input[type="password"] {
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-  padding: 15px;
+  padding: 5px;
   margin-top: 10px; /*add spacing from above */
 }
 
@@ -169,14 +137,48 @@ input[type="password"] {
 .reg-btn:hover{
     background-color: #000;
 }
-/* ======================================= login sign-up end =======================*/
 
+
+/* --------------------- responsive ness for login and sign up section */
+
+
+@media (max-width: 715px) {
+  .login {
+    flex-wrap: wrap;
+    /* display: block; */
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%; 
+    margin: 10px ;
+  }
+
+  .login button {
+    width: 90%; /* less than 100% */
+    /* margin: 10px ; */
+    margin-left: 30px;
+  }
+
+  .form-options {
+    width: 90%;
+    margin: 10px ;
+  }
+}
+
+/* ======================================= login sign-up end =======================*/
+.gallary{
+  overflow-x: hidden;
+}
 .gallary .gallary-art1{
   text-align: center;
   font-size: 30px;
 }
 .gallary .gallary-art2 img{
   height: 200px;
+  /* border: 2px solid black; */
+
 }
 .gallary .gallary-art2{
   display: grid;
@@ -186,6 +188,30 @@ input[type="password"] {
   margin-bottom: 40px;
 }
 
+/* ================================= responsive ness for gallery section */
+@media(max-width:1025px){
+  .gallary .gallary-art2{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 50px;
+ }
+}
+
+@media(max-width:670px){
+  .gallary .gallary-art2{
+    margin-left: 0;
+    padding: 0 10px;
+  }
+}
+
+@media(max-width:670px){
+  .gallary .gallary-art2{
+  grid-template-columns: auto;
+  justify-content: center;
+ }
+}
+
+/* =================================== End */
 /* =================== gallary end ============ */
 
 .footer {
@@ -199,6 +225,8 @@ input[type="password"] {
   font-family: 'Arial', sans-serif;
   color: #333;
   /* padding: 150px; */
+    overflow-x: hidden;
+
 }
 
 .footer article {
@@ -295,6 +323,50 @@ input[type="password"] {
 .footer-art5 a:hover {
   text-decoration: underline;
 }
+ 
+
+/*  ============== responsive ness for footer */
+/* Tablets (<=1024px) */
+@media (max-width: 1024px) {
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 20px;
+  }
+
+  .footer article {
+     flex: 1 1 45%; 
+     max-width: 45%;
+     margin: 20px 10px;
+  }
+
+  .footer-art5 input[type="email"] {
+    width: 100%;
+  }
+}
+
+/* Mobiles (<=768px) */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: left;
+    /* text-align: center; */
+    /* margin-left: 50px; */
+  }
+
+  .footer article {
+     flex: 1 1 100%;
+    max-width: 100%; 
+    margin: 20px 0;
+  }
+  .footer-art5 button {
+    width: 54%;
+  }
+  .footer-art5 input[type="email"] {
+  width: 50%;
+}
+}
+
 
 .copyright {
   background: #f4f4f4;
@@ -317,4 +389,17 @@ input[type="password"] {
 }
 .copyright .payments div i{
   font-size: 30px;
+}
+
+
+/* ========================= responsive ness for copyrights */
+@media(max-width: 768px){
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copyright .payments{
+    margin-top: 40px;
+  }
 }

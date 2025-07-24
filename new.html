@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Image Switcher</title>
+  <style>
+    .container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    #main-image {
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+      margin-bottom: 20px;
+    }
+
+    .thumbnails img {
+      width: 60px;
+      height: 60px;
+      border: 2px solid black;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <ul>
-        <li id="output">
-            <a href="#" onmouseenter="megaMenu()">IES</a>
-        </li>
-    </ul>
 
-    <!-- Link external JS -->
-    <script src="script.js"></script>
+<div class="container">
+  <img id="main-image" src="./image/product4.png" alt="Main Image" />
+
+  <div class="thumbnails">
+    <img src="./image/pro5.png" class="thumb" alt="Image 1">
+    <img src="./image/pro6.png" class="thumb" alt="Image 2">
+    <img src="./image/pro7.jpg" class="thumb" alt="Image 3">
+    <img src="./image/pro8.jpg" class="thumb" alt="Image 4">
+  </div>
+</div>
+
+<script>
+  // Get main image element
+  var mainImage = document.getElementById("main-image");
+
+  // Get all thumbnail images
+  var thumbs = document.getElementsByClassName("thumb");
+
+  // Loop through thumbnails and add click event
+  for (var i = 0; i < thumbs.length; i++) {
+    thumbs[i].onclick = function () {
+      var newSrc = this.getAttribute("src");
+      mainImage.setAttribute("src", newSrc);
+    }
+  }
+</script>
+
+</body>
+</html>
+
 </body>
 </html>

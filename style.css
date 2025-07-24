@@ -69,6 +69,64 @@ body,html{
      outline: none; 
      font-size: 20px; 
 }
+
+
+/* ================================ mini navbar */
+.mininav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    display: none;
+}
+.mininav label i {
+    color: black;
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 25px;
+}
+.mininav div img {
+    height: 35px;
+    width: 180px;
+}
+.show-nav {
+    /* display: none; */
+    position: absolute;
+    top: 50px;
+    left: -220px;
+    background-color: rgba(8, 8, 8, 0.6);
+    width: 200px;
+    transition: left 0.5s ease-in-out;
+}
+
+#check1:checked ~ .show-nav {
+    left: 0;
+}
+
+.show-nav ul li {
+    margin: 10px;
+    padding: 10px;
+}
+.show-nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+
+@media(max-width:1024px){
+    .navbar{
+        display: none;
+    }
+    .mininav{
+        display: flex;
+    }
+    #check1:checked~.show-nav{
+        display: block; 
+    }
+}
 /*  ==================== navbar end ====================*/
 .home{
     margin-top: 100px;
@@ -95,32 +153,105 @@ body,html{
     margin-top: 30px;
 }
 
+
+/* ------------------responsive ness for hero section or main  */
+
+@media(max-width:1024px){
+  .home{
+    padding-bottom: 250px;
+    /* text-align: center; */
+  }
+  .home div h1{
+    font-size: 80px;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  .home div h4{
+    font-size: 20px;
+  }
+  .home div button{
+    font-size: 20px;
+  }
+  .bg{
+    height: 80vh;
+  }
+}
+
+@media(max-width:872px){
+  .home{
+    padding-bottom: 170px;
+    /* text-align: center; */
+  }
+  .home div h1{
+    font-size: 50px;
+  }
+}
+@media(max-width:504px){
+  .home{
+    padding-bottom: 140px;
+  }
+  .bg{
+        height: 80vh;
+  }
+}
+
+@media(max-width:492px){
+  .home{
+    /* padding-bottom: 140px; */
+    margin-top: 40px;
+  }
+  .home div h1{
+    letter-spacing: 5px;
+    font-size: 40px;
+  }
+}
+
 /*  ======================= main end ================= */
-.services .service-art1{
-        /* background-color:blue; */
-        /* border:2px solid red; */
-        /* margin-top: 180px; */
-        /* margin-top:150px; */
-        display:flex;
-        /* justify-content: space-around; */
-      
-       
-    }
-    .services .service-art1 div{
-        display: flex;
-        align-items: center;
-        /* margin: 50px; */
-        padding: 20px;
-         
-    }
-    .service-art1-para{
-        border-right: 1px solid grey;
+.services .service-art1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* default: ek hi line me */
+  gap: 20px; /* space between items */
+}
+
+.services .service-art1 div {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.service-art1-para {
+  border-right: 1px solid grey;
+  padding-right: 30px;
+  color: #222529;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+/* ---------- Responsive design ---------- */
+@media (max-width: 1025px) {
+  .services .service-art1 {
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .service-art1-para {
+    width: 250px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 670px) {
+  .services .service-art1 {
+     display: grid;
+    grid-template-columns: auto;
     
-         padding-right: 30px;
-         color:#222529;
-         font-size: 25px;
-         white-space: nowrap;
-   }
+  }
+  .service-art1-para {
+     border: none;
+  }
+}
+
 /* ============ featurs end ============ */
 
 /* .category{
@@ -138,6 +269,7 @@ body,html{
 .categories{
     display: flex;
     padding: 20px;
+    margin-left: 50px;
 }
 .categories .category-card1{
     background-image: url(./image/women.webp);
@@ -157,8 +289,8 @@ body,html{
 }
 
 .categories .card{
-    height: 500px;
-    width: 450px;
+    height: 400px;
+    width: 350px;
     margin-left: 20px;
 }
 
@@ -166,13 +298,13 @@ body,html{
   /* background: rgba(0, 0, 0, 0.4); */
   color: white;
   width: 100%;
-  padding-top: 370px;
+  padding-top: 280px;
   padding-left: 40px;
 }
 
 .categories .card .category-info h2{
     font-size: 45px;
-    font-weight: 100;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
@@ -191,6 +323,18 @@ body,html{
     border-color: #c1bdbd;
 }
 
+
+/* ---------------- responsive ness for category section */
+
+@media(max-width:1024px)
+{
+  .categories{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+}
 
 /* ================== categories end here ===== */
 
@@ -211,7 +355,7 @@ body,html{
 
 .collections .category-gender h1 {
     font-size: 50px;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .collections .category-gender .women {
@@ -229,13 +373,14 @@ body,html{
 }
 
 .collections .category-garments div {
-    margin-left: 40px;
+    /* margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 50px;
-}
-.collections .category-garments div .div1{
+    margin-bottom: 50px; */
     text-align: center;
 }
+/* .collections .category-garments div .div1{
+    text-align: center;
+} */
 
 .collections .category-garments div a {
     text-decoration: none;
@@ -249,6 +394,12 @@ body,html{
     border-bottom: 2px solid #4b4c4dcb;
 }
 
+@media(max-width:1024px){
+  .collections .category-garments div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 /* ================================== product section =============================*/
 .product{
@@ -259,7 +410,9 @@ body,html{
     height: 500px;
     width: 300px;
     text-align: center;
-    /* border: 1px solid gray; */
+    /* border: 1px solid gray;
+    margin-bottom: 20px;
+    margin-right: 20px; */
 }
 .product .product-art1 div img{
     margin-top: 20px;
@@ -296,9 +449,13 @@ body,html{
     display: flex;
     justify-content: space-around;
 }
+.product .product-art1 div{
+    /* margin-bottom: 5px; */
+}
+
 .product .product-art1 div .btn{
   display: inline-block;
-  padding: 7px 15px;
+  padding: 5px 0px;
   background-color: black;
   color: white;
   text-decoration: none;
@@ -310,6 +467,24 @@ body,html{
   background-color: rgb(210, 205, 196);
   color: #000;
 } */
+
+
+@media(max-width:1025px){
+  .product{
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+}
+
+@media(max-width:704px){
+  .product{
+    grid-template-columns: auto auto;
+  }
+  .bg{
+    height: 60vh    ;
+  }
+}
+
 
 /* ========== seasonel collection */
 

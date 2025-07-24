@@ -88,7 +88,9 @@ body,html{
 }
 /* ==========================  right content */
 
-
+.content-checkout{
+    margin-bottom: 100px;
+}
 .content-checkout .your-order{
     border: 2px solid rgb(235, 232, 232);
     /* padding-left: 20px; */
@@ -184,7 +186,7 @@ body,html{
     gap: 10px;
 }
 .range progress{
-    width: 95%;
+    width: 50%;
 }
 
 .your-order .payment-methods{
@@ -220,4 +222,104 @@ body,html{
     /* margin: auto; */
     width: 95%;
     border: none;
+}
+
+
+
+/* Existing styles remain unchanged above this line */
+
+/* ================== Responsive for tablets (below 1024px) ================== */
+@media (max-width: 1024px) {
+    .content-checkout {
+        flex-direction: row;
+        gap: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .content-checkout .billing-form,
+    .content-checkout .your-order {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .your-order .subtotal {
+        gap: 200px;
+    }
+
+    .your-order .palce-order button {
+        width: 90%;
+    }
+
+    
+}
+
+/* ================== Responsive for mobile (below 768px) ================== */
+@media (max-width: 768px) {
+    .billing-form .name {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .your-order .about-product {
+        /* padding-top: 50px; */
+        flex-direction:row;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+     .about-product .qty-box{
+        margin-top: 90px
+     }
+     .about-product h3{
+        padding-left: 20px;
+        padding-right: 50px;
+        margin-top: 100px
+}
+    .your-order .about-product div img {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .your-order .subtotal {
+        flex-direction: row;
+        gap: 200px;
+    }
+    .your-order .palce-order button {
+        width: 100%;
+    }
+}
+
+/* ================== Small mobile (below 480px) ================== */
+@media (max-width: 480px) {
+    .content-checkout {
+        flex-direction: column;
+    }
+    .your-order .order,
+    .your-order h4 {
+        font-size: 16px;
+    }
+    .about-product .qty-box{
+        flex-direction: column;
+        /* margin-top: 90px */
+     }
+.your-order .subtotal {
+        gap: 100px;
+    }
+    .about-product h3 {
+        padding-left: 0;
+    }
+
+    .about-product div p {
+        padding-left: 0;
+    }
+
+    .your-order .payment-methods {
+        margin-left: 10px;
+    }
+
+    .your-order .check-box {
+        font-size: 15px;
+    }
+
+    .your-order .palce-order button {
+        width: 80%;
+    }
 }
